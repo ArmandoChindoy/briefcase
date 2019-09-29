@@ -1,0 +1,8 @@
+@media(max-width:900px){
+    .events{
+        display: inherit;
+    }
+    .project{
+        display: inline-block;
+    }
+}

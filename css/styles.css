@@ -1,0 +1,305 @@
+:root{
+    /* colors */
+    --black-color:#000;
+    --lightgrey-color:lightgray;
+    --darkgrey-color:darkgrey;
+    --white-color:white;
+    --darkblue-color:#1D252C;
+    --blue-color:#026fff;
+
+    /* space */
+    --space:10px;
+    --space-2:20px;
+
+    /* box-shadows */
+    --grey-boxshadow:0px 0px 3px 1px lightgray;
+
+    /* font-family */
+    --font-family:'Courier New', Courier, monospace;
+}
+*{
+margin: 0;
+padding: 0;
+text-transform: bold;
+}
+
+body{
+   font-family: var(--font-family); 
+}
+
+h1 strong{
+    color: var(--blue-color);
+}
+h2{
+    color:var(--blue-color);
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+    
+}
+/* -------------------------------------------------------aqui comienza el header */
+.header{
+    background-color:var(--darkblue-color);
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+#logo_nav{
+    height: inherit;
+}
+#logo_nav figure{
+    height: inherit;
+}
+#logo_nav img{
+    height: inherit;
+}
+.header nav{
+    height: 100%;
+}
+.header ul{
+    display: flex;
+    height: inherit;
+}
+.header ul li{
+    display: flex;
+    height: inherit;
+    list-style: none;
+    align-items: center;
+}
+.header ul li a{
+    height: inherit;
+    text-decoration: none;
+    color:var(--darkgrey-color);
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+.header a:hover{
+    color: var(--white-color)
+}
+#nav_button{
+    border:white solid 1px;
+    border-radius: 5px;
+    height: 50%;
+    align-items: center;
+}
+#nav_button:hover{
+    box-shadow:var(--grey-boxshadow) ;
+}
+
+/* ----------------------------------------------------Aqui termina el header */
+/* ----------------------------------------------------Aqui comienza la presentación */
+.container_presentation{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container_presentation h1{
+    margin: var(--space);
+    color: var(--lightgrey-color);
+    font-size: 30px;
+    font-family: var(--font-family);
+}
+.image_main_section{
+    width:50%;
+    max-height:300px; 
+    border-radius: 20px;
+}
+.image_main_section  img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+/* --------------------------------------------------Aqui termina la presentación */
+/* --------------------------------------------------Aqui comienza el portafolio */
+.portafolio{
+    background-color: var(--white-color);
+    width: 100%;
+}
+.portafolio_title, .events_title{
+    margin: 20px;
+}
+.project{
+    border: var(--lightgrey-color) solid 1px;
+    border-radius: 10px;
+    width: 95%;
+    margin: var(--space-2) auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--grey-boxshadow);
+
+}
+.project .project_details{
+    padding:var(--space-2);
+    width: 500px;
+}
+.project .project_title{
+    font-size: 40px;
+    margin: 0 0 var(--space) 0;
+}
+.project .project_course, .project_date .project_url{
+    font-size: 15px;
+    margin: var(--space) 0;
+}
+.project .project_description{
+    padding: 20px 0;
+    font-size: 20px;
+}
+.project_img{
+    display: flex;
+    height: 400px;
+    margin:  var(--space-2);
+    width: 100%;
+    align-items: center;
+}
+.project img{
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+}
+/* --------------------------------------------------Aqui termina el portafolio */
+/* __________________________________________________Aqui comienzan los eventos */
+.events_section{
+    width: 100%;
+}
+.events{
+    display: flex;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+.event{
+    width: 40%;
+    border: #026fff solid 1px;
+    margin: var(--space-2) auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #F0F8FD;
+    justify-content: space-between;
+    flex-shrink: 0;
+    
+}
+.event_image{
+    width: 100%;
+    height: 400px;
+}
+.event_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.event_description{
+    text-align: center;
+    width: 90%;
+    margin: var(--space-2) auto;
+    background-color: var(--white-color);
+    margin-top:-40px; 
+    position: relative;
+    padding: var(--space);
+    border-radius: 10px;
+}
+.description{
+    text-align: left;
+}
+.event_url{
+    margin: 10px;
+    text-decoration: none;
+    border: #026fff solid 1px;
+    padding:  2px var(--space-2);
+    color: #026fff;
+}
+.event_url:hover{
+    box-shadow: var(--grey-boxshadow);
+}
+/* __________________________________________________Aqui terminan los eventos */
+/* __________________________________________________Aqui comienza el contacto */
+.contact_section{
+    background-color: #026fff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.contact_title{
+    color: var(--white-color);
+    font-size: 20px;
+    margin: 10px 0;
+}
+.form_email{
+    padding: 5px 25px 5px 25px;
+    border-color: gray;
+    background-image: url('../images/envelope.svg');
+    background-repeat: no-repeat;
+    background-position: 2px;
+    background-size: 20px;
+    border-style: solid;
+    
+}
+.contact_button{
+    display: block; 
+    background: transparent;
+    color: white;
+    border: white solid 1px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px auto;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50PX;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');   
+}
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');   
+}
+.social-link.github{
+    background-image: url('../images/github.svg');   
+}
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');   
+}
+/* __________________________________________________Aqui termina el contacto */
+/* --------------------------------------------------Aqui comienza el footer */
+.footer{
+    color: var(--lightgrey-color);
+    background-color: var(--darkblue-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer div{
+    padding: 0 1%;
+}
+.footer a{
+    color: var(--lightgrey-color);
+}
+.footer a:hover{
+    color: var(--white-color);
+}
+.footer img{
+    vertical-align:middle;
+}
+/* ----------------------------------------------------Aqui termina el footer */
+
